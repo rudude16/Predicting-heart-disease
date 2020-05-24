@@ -1,11 +1,11 @@
 def isArmstrong(num):
     temp=num
-    sum=0
+    s=0
     while(temp!=0):
         r=temp%10
-        sum+=r**3
+        s+=r**3
         temp//=10
-    if(sum==num):
+    if(s==num):
         return True
     else:
         return False
